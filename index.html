@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Змейка</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game">
+    <h1>🐍 Змейка</h1>
+    <p class="hint">Собирай яблоки и не врезайся в стены или в себя!</p>
+
+    <div class="score-row">
+      <span>Счёт: <span id="score">0</span></span>
+      <span>Рекорд: <span id="best">0</span></span>
+    </div>
+
+    <canvas id="board" width="400" height="400" aria-label="Игровое поле"></canvas>
+
+    <div class="buttons" aria-label="Кнопки управления">
+      <button class="arrow up" data-dir="up" aria-label="Вверх">▲</button>
+      <button class="arrow left" data-dir="left" aria-label="Влево">◀</button>
+      <button class="arrow down" data-dir="down" aria-label="Вниз">▼</button>
+      <button class="arrow right" data-dir="right" aria-label="Вправо">▶</button>
+    </div>
+
+    <button id="restart">Начать заново</button>
+    <p class="message" id="message"></p>
+  </main>
+</body>
+</html>
