@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  color: #f3f4f6;
+  background: radial-gradient(circle at top, #26354d, #101722 65%);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.game {
+  width: min(100%, 460px);
+  padding: 24px;
+  border: 1px solid #ffffff20;
+  border-radius: 24px;
+  background: #182232;
+  box-shadow: 0 20px 60px #0006;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-size: 2rem;
+}
+
+.hint {
+  margin: 0 0 18px;
+  color: #aab6c8;
+  font-size: 0.95rem;
+}
+
+.score-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid #334155;
+  border-radius: 14px;
+  background: #0c1420;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 58px);
+  gap: 8px;
+  justify-content: center;
+  margin: 18px auto 12px;
+}
+
+button {
+  border: 0;
+  border-radius: 12px;
+  color: white;
+  background: #334155;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background 0.15s, transform 0.15s;
+}
+
+button:hover {
+  background: #475569;
+}
+
+button:active {
+  transform: scale(0.94);
+}
+
+.arrow {
+  width: 58px;
+  height: 48px;
+  font-size: 1.3rem;
+}
+
+.up {
+  grid-column: 2;
+}
+
+.left {
+  grid-column: 1;
+}
+
+.down {
+  grid-column: 2;
+}
+
+.right {
+  grid-column: 3;
+}
+
+#restart {
+  padding: 11px 20px;
+  background: #16a34a;
+}
+
+#restart:hover {
+  background: #15803d;
+}
+
+.message {
+  min-height: 24px;
+  margin: 8px 0 0;
+  color: #facc15;
+  font-weight: 600;
+}
